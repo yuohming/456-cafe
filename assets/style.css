@@ -8,11 +8,11 @@
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-between;
   justify-items: center;
   background-color: pink;
   padding: 12px;
   align-items: center;
+  gap: 24px;
 }
 
 .navbar h1 {
