@@ -1,6 +1,13 @@
 h2 {
-  font-family: 'gameofsquids';
+  font-family: "gameofsquids";
   color: white;
   font-size: 50px;
   text-align: center;
+}
+
+.hero {
+  height: 1000px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }

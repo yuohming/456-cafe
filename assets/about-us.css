@@ -1,130 +1,159 @@
 body {
-    background-color: #1b1b1b;
+  background-color: #1b1b1b;
 }
 @font-face {
-    font-family: 'gameofsquids';
-    src: url(fonts/Game\ Of\ Squids.ttf) format('truetype'); 
+  font-family: "gameofsquids";
+  src: url(fonts/Game\ Of\ Squids.ttf) format("truetype");
 }
 @font-face {
-    font-family: 'gantari';
-    src: url(fonts/Gantari-SemiBold.otf);
+  font-family: "gantari";
+  src: url(fonts/Gantari-SemiBold.otf);
 }
 /* Container and Layout */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 h1 {
-    color: #E83E7D;
-    font-family: 'gameofsquids', sans-serif;
-    text-align: center;
-    font-size: 100px;
+  color: #e83e7d;
+  font-family: "gameofsquids", sans-serif;
+  text-align: center;
+  font-size: 100px;
 }
 h2 {
-    color: #E83E7D;
-    font-family: 'gameofsquids', sans-serif;
-    text-align: left;
-    font-size: 50px;
+  color: #e83e7d;
+  font-family: "gameofsquids", sans-serif;
+  text-align: left;
+  font-size: 50px;
 }
 
-
 .aboutus-note {
-    background: #e83e7d;
-    padding: 1rem;
-    font-size: 18px;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'gantari';
+  background: #e83e7d;
+  padding: 1rem;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "gantari";
 }
 
 .cafe-history {
-    padding-left: 80px;
-    background: #095346;
+  padding-left: 80px;
+  background: #095346;
 }
 
 .history-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    font-family: 'gantari';  
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  font-family: "gantari";
 }
 
 .history-text p {
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-    font-family: 'gantari';
-    color: #ffffff;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  font-family: "gantari";
+  color: #ffffff;
 }
 
 .history-image img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* ===== Team section part ===== */
 .team {
-    font-family: 'gantari';
-    text-align: center;
-    color: white;
-   
+  font-family: "gantari";
+  text-align: center;
+  color: white;
 }
 .team h2 {
-    text-align: center;
-    font-family: 'gameofsquids';
-    background-color: #e83e7d;
-    color: #095346;
-    font-size: 50px ;}
+  text-align: center;
+  font-family: "gameofsquids";
+  background-color: #e83e7d;
+  color: #095346;
+  font-size: 50px;
+}
 .text-intro {
-    font-family: 'gantari';
-    font-size: 25px;
-    background-color: #e83e7d;
-    
+  font-family: "gantari";
+  font-size: 25px;
+  background-color: #e83e7d;
 }
 
-
 .team-section {
-    width:100%;
-    background:transparent; 
-    padding:0; margin:0 auto
+  width: 100%;
+  background: transparent;
+  padding: 0;
+  margin: 0 auto;
 }
 .team-grid {
-    display:grid; grid-template-columns:1fr 1fr;
-    max-width:1100px; margin:48px auto 0 auto;
-    min-height:420px; overflow:hidden; border-radius:0;
-    box-shadow:0 2px 24px rgba(0,0,0,0.08);
-  }
-.team-image{
-      background:var(--pink);
-      display:flex; align-items:flex-end; justify-content:center; padding:0; min-height:420px;
-    }
-    .team-image img{
-      width:100%; height:100%; object-fit:cover; display:block;
-    }
-    .team-content{
-      background:#fff; color:#222;
-      padding:48px 32px 0 32px;
-      display:flex; flex-direction:column; justify-content:flex-start; align-items:flex-start;
-    }
-    .team-heading{display:flex; gap:18px; align-items:baseline; margin-bottom:8px}
-    .team-heading .meet, .team-heading .our{
-      font-size:2.6rem; font-weight:700; color:var(--pink); letter-spacing:2px; text-transform:uppercase;
-    }
-    .team-subheading{
-      font-size:2.2rem; font-weight:700; color:#222; margin:0 0 18px 0; letter-spacing:1px;
-    }
-    .team-content p{font-size:1.1rem; margin:12px 0 0 0; line-height:1.6
-    }
-    /* ====== TEAM SECTION ====== */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1100px;
+  margin: 48px auto 0 auto;
+  min-height: 420px;
+  overflow: hidden;
+  border-radius: 0;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.08);
+}
+.team-image {
+  background: var(--pink);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  min-height: 420px;
+}
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.team-content {
+  background: #fff;
+  color: #222;
+  padding: 48px 32px 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.team-heading {
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.team-heading .meet,
+.team-heading .our {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--pink);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.team-subheading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 18px 0;
+  letter-spacing: 1px;
+}
+.team-content p {
+  font-size: 1.1rem;
+  margin: 12px 0 0 0;
+  line-height: 1.6;
+}
+/* ====== TEAM SECTION ====== */
 .team-section {
-  background-color: #1b1b1b;   /* dark bg */
+  background-color: #1b1b1b; /* dark bg */
   padding-bottom: 60px;
   color: #fff;
   font-family: "Gantari", sans-serif;
 }
-
 
 /* Team grid */
 .team-grid {
@@ -143,7 +172,7 @@ h2 {
   overflow: hidden;
   text-align: center;
   max-width: 280px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
 .member-img {
@@ -158,105 +187,118 @@ h2 {
   letter-spacing: 1px;
   color: #1b1b1b;
 }
+
 .main-name {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #e83e7d;   
-  font-family: 'gantari';
+  color: #e83e7d;
+  font-family: "gantari";
 }
+
 .name {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #095346;   
-  font-family: 'gantari';
-}
-.role {
-    color: #1b1b1b;
-    font-family: 'gameofsquids';
-    font-size: 30px;
-}
-.bio {
-    margin: 12px 0;
-    font-family: 'gantari';
-    font-size: 15px;
-    line-height: 1.2;
-    color: #1b1b1b;
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
-    
-}
-.location-hours {
-    padding: 80px 0;
-    background: #1b1b1b;
+  color: #095346;
+  font-family: "gantari";
 }
 
+.role {
+  color: #1b1b1b;
+  font-family: "gameofsquids";
+  font-size: 30px;
+}
+
+.bio {
+  margin: 12px 0;
+  font-family: "gantari";
+  font-size: 15px;
+  line-height: 1.2;
+  color: #1b1b1b;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.location-hours {
+  padding: 80px 0;
+  background: #1b1b1b;
+}
+
+.location-section {
+  margin-top: 80px;
+}
 
 .hours-section h2,
 .location-section h2 {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .hours-grid {
-    background: #095346;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background: #095346;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .hours-day {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
 }
 
 .hours-day:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .day {
-    font-size: 18px;
-    color: #ffffff;
-    font-family: 'gantari';
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "gantari";
 }
 
 .time {
-    color: #e83e7d;
-    font-size: 18px;
-    font-family: 'gantari';
+  color: #e83e7d;
+  font-size: 18px;
+  font-family: "gantari";
 }
 
 .hours-note {
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'gantari';
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "gantari";
 }
 
 .address {
-    background: #095346;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+  background: #095346;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 .address p {
-    margin-bottom: 1rem;
-    color: #ffffff;
-    font-family: 'gantari';
-
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-family: "gantari";
 }
 
 .address p:first-child {
-    font-family: 'gantari';
-    color: #e83e7d;
-    font-size: 25PX;
+  font-family: "gantari";
+  color: #e83e7d;
+  font-size: 25px;
 }
 
+.team-intro {
+  padding: 24px 0;
+}
+
+.team h2 {
+  color: #ffffff;
+}

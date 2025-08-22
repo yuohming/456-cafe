@@ -1,42 +1,82 @@
+@font-face {
+  font-family: "gameofsquids";
+  src: url(font/Game\ Of\ Squids.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "gantari";
+  src: url(font/Gantari-SemiBold.otf) format(truetype);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{background-color: #1b1b1b;}
-:buffering
+
+body {
+  background-color: #1b1b1b;
+}
+
+h1 {
+  font-family: "gameofsquids";
+  color: white;
+}
 
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 999;
+  background-color: #1b1b1b;
+}
+
+.nav-links {
   display: flex;
-  justify-items: center;
-  padding: 12px;
+  gap: 28px;
+}
+
+.navbar-item {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 24px;
+}
+
+.navbar-container {
+  padding: 24px;
+  gap: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.border {
+  width: 100%;
+  background-color: white;
+  padding: 2px;
 }
 
 .navbar h1 {
-  font-size: 24px;
-  color: white;
-}
-@font-face {
-  font-family: 'gameofsquids';
-  src: url(font/Game\ Of\ Squids.ttf) format(truetype);
-}
-@font-face {
-  font-family: 'gantari';
-  src: url(font/Gantari-SemiBold.otf) format(truetype); 
-}
-h1 {
-  font-family: 'gameofsquids';
+  font-size: 20px;
   color: white;
 }
 
 .navbar a {
   text-decoration: none;
-  font-family: 'gantari';
+  font-family: "gantari";
   text-align: right;
   color: white;
-  margin: 0 4px;
+}
+
+.navbar a:hover {
+  color: #e83e7d;
+  transition: 0.3s;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  height: 64px;
 }
