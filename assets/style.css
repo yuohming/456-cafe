@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{background-color: #1b1b1b;}
+:buffering
 
 .navbar {
   position: sticky;
   top: 0;
   display: flex;
   justify-items: center;
-  background-color: pink;
   padding: 12px;
   align-items: center;
   gap: 24px;
@@ -17,10 +18,25 @@
 
 .navbar h1 {
   font-size: 24px;
+  color: white;
+}
+@font-face {
+  font-family: 'gameofsquids';
+  src: url(font/Game\ Of\ Squids.ttf) format(truetype);
+}
+@font-face {
+  font-family: 'gantari';
+  src: url(font/Gantari-SemiBold.otf) format(truetype); 
+}
+h1 {
+  font-family: 'gameofsquids';
+  color: white;
 }
 
 .navbar a {
   text-decoration: none;
-  color: black;
+  font-family: 'gantari';
+  text-align: right;
+  color: white;
   margin: 0 4px;
 }
