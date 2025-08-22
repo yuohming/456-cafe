@@ -4,10 +4,79 @@ h2 {
   font-size: 50px;
   text-align: center;
 }
+h4 {
+  font-family: "gameofsquids";
+  color: #e83e7d;
+  font-size: 50px;
+  text-align: center;
+}
+h3{
+  font-family: "gantari";
+  color: white;
+  font-size: 24px;
+  text-align: left;
+}
+
+p{
+  font-family: "gantari";
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 60px;
+}
 
 .hero {
+  padding-top: 50px;
   height: 1000px;
   width: 100%;
   background-size: cover;
   background-position: center;
+}
+.drinks{
+  padding-top: 80px;
+  height: 750px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.intro{
+  padding: 50px;
+  gap: 12px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu{
+  font-family: "gameofsquids";
+  text-align: center;
+  background-color: white;
+}
+
+.game{
+  font-family: "gameofsquids";
+  text-align: center;
+  background-color: #095346;
+}
+.gamessquid{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-items: center;
+}
+
+.green{
+  text-align: center;
+  background-color: #e83e7d;
+}
+
+.symbol2{
+  padding: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.offers{
+  background-color: #095346;
 }
