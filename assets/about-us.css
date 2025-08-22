@@ -3,7 +3,7 @@ body {
 }
 @font-face {
     font-family: 'gameofsquids';
-    src: url(fonts/Game\ Of\ Squids.otf) format('truetype'); 
+    src: url(fonts/Game\ Of\ Squids.ttf) format('truetype'); 
 }
 @font-face {
     font-family: 'gantari';
@@ -259,3 +259,4 @@ h2 {
     color: #e83e7d;
     font-size: 25PX;
 }
+
