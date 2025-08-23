@@ -1,11 +1,10 @@
 @font-face {
   font-family: "gameofsquids";
-  src: url(font/Game\ Of\ Squids.ttf) format(truetype);
+  src: url(font/Game\ Of\ Squids.ttf) format("truetype");
 }
-
 @font-face {
   font-family: "gantari";
-  src: url(font/Gantari-SemiBold.otf) format(truetype);
+  src: url(font/Gantari-SemiBold.otf) format("opentype");
 }
 
 * {
@@ -16,6 +15,10 @@
 
 body {
   background-color: #1b1b1b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "gantari", Arial, sans-serif;
 }
 
 h1 {
@@ -23,6 +26,7 @@ h1 {
   color: white;
 }
 
+/* Navbar Styles */
 .navbar {
   position: sticky;
   top: 0;
@@ -65,11 +69,11 @@ h1 {
   font-family: "gantari";
   text-align: right;
   color: white;
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
   color: #e83e7d;
-  transition: 0.3s;
 }
 
 .flex-col {
@@ -79,4 +83,443 @@ h1 {
 
 .logo {
   height: 64px;
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* Button Styles */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-family: "gantari";
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #e83e7d, #ff6b9d);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #d1356b, #e83e7d);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid #e83e7d;
+}
+
+.btn-secondary:hover {
+  background: #e83e7d;
+  color: white;
+}
+
+/* Card Styles */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.card h2,
+.card h3 {
+  color: white;
+  margin-bottom: 16px;
+}
+
+.card p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  color: white;
+  font-family: "gantari";
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-family: "gantari";
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #e83e7d;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+/* Footer CSS - Integrated with your theme */
+.site-footer {
+  margin-top: auto;
+  font-family: "gantari", Arial, sans-serif;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background: #2d8a6b;
+  padding: 40px 0;
+}
+
+.newsletter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.newsletter-content h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  font-family: "gantari";
+}
+
+.newsletter-title {
+  margin-bottom: 8px !important;
+}
+
+.newsletter-form {
+  flex-shrink: 0;
+}
+
+.email-input-container {
+  display: flex;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email-input {
+  border: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  outline: none;
+  width: 280px;
+  color: #666;
+  font-family: "gantari";
+}
+
+.email-input::placeholder {
+  color: #999;
+}
+
+.subscribe-btn {
+  background: #e91e63;
+  border: none;
+  padding: 12px 16px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background: #c2185b;
+}
+
+/* Main Footer */
+.main-footer {
+  background: #2b2b2b;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo Section */
+.logo-section {
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.logo-text {
+  font-size: 72px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: -2px;
+  font-family: "gameofsquids";
+}
+
+.logo-cafe {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+  font-family: "gantari";
+}
+
+.logo-cafe::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #e91e63;
+  border-radius: 50%;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+/* Footer Links Section */
+.footer-links-section {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: white;
+  font-family: "gantari";
+}
+
+.contact-email,
+.contact-phone,
+.footer-text {
+  font-size: 14px;
+  color: #ccc;
+  margin: 8px 0;
+  line-height: 1.5;
+  font-family: "gantari";
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #e91e63;
+  transform: translateY(-2px);
+}
+
+.social-handle {
+  font-size: 14px;
+  color: #ccc;
+  margin: 0;
+  font-family: "gantari";
+}
+
+/* Created By Section */
+.created-by-section {
+  background: #1f1f1f;
+  padding: 30px 0;
+  border-top: 1px solid #444;
+}
+
+.created-by {
+  text-align: center;
+}
+
+.created-by-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  font-family: "gantari";
+}
+
+.created-by-names {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-family: "gantari";
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .navbar-container {
+    padding: 20px;
+  }
+  
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navbar-item {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .newsletter-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  
+  .newsletter-content h2 {
+    font-size: 24px;
+  }
+  
+  .email-input {
+    width: 220px;
+  }
+  
+  .logo-text {
+    font-size: 48px;
+  }
+  
+  .logo-cafe {
+    font-size: 32px;
+  }
+  
+  .footer-links-section {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar h1 {
+    font-size: 18px;
+  }
+  
+  .logo {
+    height: 48px;
+  }
+  
+  .newsletter-section {
+    padding: 30px 0;
+  }
+  
+  .footer-container {
+    padding: 0 16px;
+  }
+  
+  .newsletter-content h2 {
+    font-size: 20px;
+  }
+  
+  .email-input {
+    width: 180px;
+    font-size: 12px;
+  }
+  
+  .logo-section {
+    padding: 40px 0;
+  }
+  
+  .logo-text {
+    font-size: 36px;
+  }
+  
+  .logo-cafe {
+    font-size: 24px;
+  }
+  
+  .footer-links-section {
+    padding: 30px 0;
+  }
 }

@@ -5,10 +5,333 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/style.css" />
     <link rel="stylesheet" href="/assets/menu.css" />
+    <link rel="stylesheet" href="/assets/menu-buttons.css" />
     <title>Menu</title>
   </head>
+
   <body>
-    <h1>Menu</h1>
-    <button onclick="history.back()">Go Back</button>
+    <div class="navbar">
+      <div class="flex-col navbar-container">
+        <div class="navbar-item">
+          <img class="logo" src="/assets/image/logo.png" />
+          <div class="nav-links">
+            <a href="/">HOME</a>
+            <a href="/menu.html">MENU</a>
+            <a href="/about-us.html">ABOUT US</a>
+          </div>
+        </div>
+        <div class="border"></div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <img class="banner" src="/assets/image/menu footer short-01.png" width="100%" alt="Menu Hero Image" />
+      
+      <!-- Menu Category Buttons -->
+      <div class="menu-buttons-container">
+        <div class="menu-buttons">
+          <button class="menu-btn drinks-btn active" data-category="drinks">
+            DRINKS
+          </button>
+          <button class="menu-btn dessert-btn" data-category="dessert">
+            DESSERT
+          </button>
+          <button class="menu-btn snack-btn" data-category="snack">
+            SNACK
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu Content Area -->
+
+      <div class="menu-content">
+
+        <!-- Drinks Section -->
+
+        <div class="menu-section drinks-section active" data-category="drinks">
+          <div class="menu-section-header">
+            <h2 class="section-title">DRINKS</h2>
+          </div>
+
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-02.png" alt="456 Expresso Shot" />
+                <div class="image-border"></div>
+              </div>
+              <div class="menu-item-info">
+                <h3 class="item-name">456 Expresso Shot</h3>
+                <p class="item-price">$1.00</p>
+              </div>
+            </div>
+            
+            <!-- Add more drink items here -->
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-03.png" alt="Cappuccino" />
+                <div class="image-border"></div>
+              </div>
+              <div class="menu-item-info">
+                <h3 class="item-name">Squid Ink Cold Brew</h3>
+                <p class="item-price">$2.50</p>
+              </div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-04.png" alt="Latte" />
+                <div class="image-border"></div>
+              </div>
+              <div class="menu-item-info">
+                <h3 class="item-name">dalgona Dream Latte</h3>
+                <p class="item-price">$2.50</p>
+              </div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-05.png" alt="Americano" />
+                <div class="image-border"></div>
+              </div>
+              <div class="menu-item-info">
+                <h3 class="item-name">Mat-Cha Latte</h3>
+                <p class="item-price">$3.80</p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-06.png" alt="Americano" />
+                <div class="image-border"></div>
+              </div>
+              
+              <div class="menu-item-info">
+                <h3 class="item-name">Ddakkji Soda</h3>
+                <p class="item-price">$2.50</p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-07.png" alt="Americano" />
+                <div class="image-border"></div>
+              </div>
+              
+              <div class="menu-item-info">
+                <h3 class="item-name">Frontman’s Choice (Hojicha’s Iced Tea)</h3>
+                <p class="item-price">$2.00</p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-08.png" alt="Americano" />
+                <div class="image-border"></div>
+              </div>
+              
+              <div class="menu-item-info">
+                <h3 class="item-name">Dusty Invitation Hojicha</h3>
+                <p class="item-price">$3.50</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      
+        <!-- Dessert Section (Hidden by default) -->
+        <div class="menu-section dessert-section" data-category="dessert">
+          <div class="menu-section-header">
+            <h2 class="section-title">DESSERT</h2>
+          </div>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-09.png" alt="Chocolate Cake" />
+                <div class="image-border"></div>
+              </div>
+              <div class="menu-item-info">
+                <h3 class="item-name">Red Bean Bingsu</h3>
+                <p class="item-price">$4.00</p>
+              </div>
+            </div>
+            <!-- Add more dessert items -->
+             <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-10.png" alt="Chocolate Cake" />
+                <div class="image-border"></div>
+              </div>
+              <div class="menu-item-info">
+                <h3 class="item-name">Squid Ink Cake</h3>
+                <p class="item-price">$4.50</p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-11.png" alt="Chocolate Cake" />
+                <div class="image-border"></div>
+              </div>
+              <div class="menu-item-info">
+                <h3 class="item-name">Marble Cakepop</h3>
+                <p class="item-price">$1.50</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Snack Section (Hidden by default) -->
+        <div class="menu-section snack-section" data-category="snack">
+          <div class="menu-section-header">
+            <h2 class="section-title">SNACK</h2>
+          </div>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-12.png" alt="Croissant" />
+                <div class="image-border"></div>
+              </div>
+              <div class="menu-item-info">
+                <h3 class="item-name">Squid Chips</h3>
+                <p class="item-price">$1.00</p>
+              </div>
+            </div>
+            <!-- Add more snack items -->
+
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-13.png" alt="Croissant" />
+                <div class="image-border"></div>
+              </div>
+              <div class="menu-item-info">
+                <h3 class="item-name">Red Light Chili Nuts</h3>
+                <p class="item-price">$1.00</p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img src="/assets/image/menu food-14.png" alt="Croissant" />
+                <div class="image-border"></div>
+              </div>
+              <div class="menu-item-info">
+                <h3 class="item-name">Dalgona Candy</h3>
+                <p class="item-price">$1.50</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer HTML -->
+    <footer class="site-footer">
+      <!-- Newsletter Section -->
+      <div class="newsletter-section">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h2 class="newsletter-title">Stay up to date on fun</h2>
+            <h2 class="newsletter-subtitle">Games and Offers!!</h2>
+          </div>
+          <div class="newsletter-form">
+            <div class="email-input-container">
+              <input 
+                type="email" 
+                class="email-input" 
+                placeholder="Enter your Email Address"
+                aria-label="Email Address"
+              >
+              <button class="subscribe-btn" aria-label="Subscribe">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Footer -->
+      <div class="main-footer">
+        <div class="footer-container">
+          <!-- Logo Section -->
+          <div class="logo-section">
+            <div class="footer-logo">
+              <img src="/assets/image/logo.png" alt="456 Cafe Logo" />
+            </div>
+          </div>
+
+          <!-- Footer Links -->
+          <div class="footer-links-section">
+            <div class="footer-column">
+              <h3 class="footer-column-title">CONTACT US</h3>
+              <p class="contact-email">456cafe@gmail.com</p>
+              <p class="contact-phone">+855 11 345 987</p>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-column-title">PRIVACY POLICY</h3>
+              <p class="footer-text">All rights reserved. © 2025 - 456 Cafe</p>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-column-title">FOLLOW US</h3>
+              <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.79-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+              </div>
+              <p class="social-handle">@456°.cafe</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Created By Section -->
+        <div class="created-by-section">
+          <div class="footer-container">
+            <div class="created-by">
+              <h4 class="created-by-title">CREATED BY</h4>
+              <p class="created-by-names">LAY MINGHOUY • THEN RACHNA • BUTH PUTHIRIKA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript for button interactions and menu sections
+      document.querySelectorAll('.menu-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          document.querySelectorAll('.menu-btn').forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          // Hide all menu sections
+          document.querySelectorAll('.menu-section').forEach(section => {
+            section.classList.remove('active');
+          });
+          
+          // Show corresponding menu section
+          const category = button.dataset.category;
+          const targetSection = document.querySelector(`.menu-section[data-category="${category}"]`);
+          if (targetSection) {
+            targetSection.classList.add('active');
+          }
+        });
+      });
+    </script>
   </body>
 </html>
+
+<!-- created by Buth Puthirika -->

@@ -1,0 +1,464 @@
+/* Menu Buttons CSS - Save as /assets/menu-buttons.css */
+
+.menu-buttons-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #1b1b1b;
+}
+
+.menu-buttons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-btn {
+  font-family: "gantari", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  min-width: 140px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DRINKS Button - Green */
+.drinks-btn {
+  background: linear-gradient(135deg, #e83e7d, #f054a0);
+  color: white;
+  box-shadow: 0 4px 15px rgba(45, 138, 107, 0.3);
+}
+
+.drinks-btn:hover {
+  background: linear-gradient(135deg, #e83e7d, #f054a0);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(45, 138, 107, 0.4);
+}
+
+.drinks-btn.active {
+  background: linear-gradient(135deg, #e83e7d, #f054a0);
+  box-shadow: 0 6px 25px rgba(45, 138, 107, 0.5);
+  transform: translateY(-2px);
+}
+
+/* DESSERT Button - Pink */
+.dessert-btn {
+  background: linear-gradient(135deg, #e83e7d, #f054a0);
+  color: white;
+  box-shadow: 0 4px 15px rgba(232, 62, 125, 0.3);
+}
+
+.dessert-btn:hover {
+  background: linear-gradient(135deg, #f054a0, #ff6bb3);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(232, 62, 125, 0.4);
+}
+
+.dessert-btn.active {
+  background: linear-gradient(135deg, #ff6bb3, #ff82c6);
+  box-shadow: 0 6px 25px rgba(232, 62, 125, 0.5);
+  transform: translateY(-2px);
+}
+
+/* SNACK Button - Pink (similar to dessert but slightly different shade) */
+.snack-btn {
+  background: linear-gradient(135deg, #e91e63, #f8479a);
+  color: white;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+}
+
+.snack-btn:hover {
+  background: linear-gradient(135deg, #f8479a, #ff5daa);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+}
+
+.snack-btn.active {
+  background: linear-gradient(135deg, #ff5daa, #ff74bd);
+  box-shadow: 0 6px 25px rgba(233, 30, 99, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Hover effects for all buttons */
+.menu-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.menu-btn:hover::before {
+  left: 100%;
+}
+
+/* Active state indicator */
+.menu-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+}
+
+/* Focus states for accessibility */
+.menu-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* Pressed/Click effect */
+.menu-btn:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-buttons-container {
+    padding: 40px 16px;
+  }
+  
+  .menu-buttons {
+    gap: 16px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .menu-btn {
+    width: 100%;
+    min-width: auto;
+    font-size: 16px;
+    padding: 14px 28px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-buttons-container {
+    padding: 30px 12px;
+  }
+  
+  .menu-btn {
+    font-size: 15px;
+    padding: 12px 24px;
+    height: 48px;
+  }
+}
+
+/* Animation for button appearance */
+@keyframes buttonSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-btn {
+  animation: buttonSlideIn 0.5s ease forwards;
+}
+
+.menu-btn:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.menu-btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.menu-btn:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Menu Items CSS - Add this to your menu-buttons.css or create separate file */
+
+/* Menu Content Area */
+.menu-content {
+  background-color: #1b1b1b;
+  width: 100%; /* Ensure full width */
+}
+
+/* Menu Section */
+.menu-section {
+  max-width: none; /* Remove the 2000px limit */
+  margin: 0;
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.menu-section.active {
+  display: block;
+}
+
+/* Section Header */
+.menu-section-header {
+  background: linear-gradient(135deg, #2d8a6b, #1b1b1b);
+  padding: 40px 0; /* Remove horizontal padding */
+  border-radius: 0; /* Remove border radius to match footer */
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Ensure full width */
+}
+
+.section-title {
+  font-family: "gameofsquids", Arial, sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: right;
+  margin: 0;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+  max-width: 1200px; /* Match footer's max-width */
+  margin: 0 auto; /* Center it */
+  padding: 0 20px; /* Add horizontal padding back for content */
+}
+
+/* Decorative elements for section header */
+.menu-section-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Menu Items - Vertical Stack Layout */
+.menu-items-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  background: #2b2b2b;
+  border-radius: 0; /* Remove border radius */
+  max-width: none; /* Remove the 800px limit */
+  width: 100%; /* Make it full width */
+  margin: 0; /* Remove auto centering */
+}
+
+/* Individual Menu Item */
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 40px 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:hover {
+  background: rgba(45, 138, 107, 0.1);
+  transform: translateX(10px);  
+}
+
+/* Menu Item Image Container */
+.menu-item-image {
+  flex-shrink: 0;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.menu-item-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-item-image img {
+  transform: scale(1.05);
+}
+
+/* Green border around image like in your design */
+.image-border {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 16px;
+  pointer-events: none;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover .image-border {
+  border-color: #3ba675;
+  transform: scale(1.02);
+}
+
+/* Menu Item Info */
+.menu-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.item-name {
+  font-family: "gantari", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.item-price {
+  font-family: "gantari", Arial, sans-serif;
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Different section styles */
+.dessert-section .menu-section-header {
+  background: linear-gradient(135deg, #e83e7d, #1b1b1b);
+}
+
+.dessert-section .image-border {
+  border-color: #e83e7d;
+}
+
+.snack-section .menu-section-header {
+  background: linear-gradient(135deg, #e91e63, #1b1b1b);
+}
+
+.snack-section .image-border {
+  border-color: #e91e63;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading placeholder for images */
+.menu-item-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.menu-item-image img {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 10px) {
+  .menu-content {
+    width: 100px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  .menu-section-header {
+    padding: 32px;
+  }
+  
+  .menu-item {
+    padding: 30px 20px;
+    gap: 24px;
+  }
+  
+  .menu-item-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .item-name {
+    font-size: 24px;
+  }
+  
+  .item-price {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .menu-section-header {
+    padding: 24px 16px;
+  }
+  
+  .menu-item {
+    padding: 24px 16px;
+    gap: 20px;
+  }
+  
+  .menu-item-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .item-name {
+    font-size: 20px;
+  }
+  
+  .item-price {
+    font-size: 18px;
+  }
+}
