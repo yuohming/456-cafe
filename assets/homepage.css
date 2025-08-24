@@ -2,27 +2,35 @@ h2 {
   font-family: "gameofsquids";
   color: white;
   font-size: 50px;
-  text-align: center;
 }
+
 h4 {
   font-family: "gameofsquids";
   color: #e83e7d;
   font-size: 50px;
-  text-align: center;
 }
-h3{
+
+h3 {
   font-family: "gantari";
   color: white;
   font-size: 24px;
   text-align: left;
 }
 
-p{
+h5 {
+  font-family: "gantari";
+  font-size: 25px;
+  color: white;
+}
+
+p {
   font-family: "gantari";
   color: white;
   font-size: 18px;
+}
+
+.text-center {
   text-align: center;
-  padding: 60px;
 }
 
 .hero {
@@ -32,51 +40,156 @@ p{
   background-size: cover;
   background-position: center;
 }
-.drinks{
+
+.drinks {
   padding-top: 80px;
   height: 750px;
   width: 100%;
   background-size: cover;
   background-position: center;
 }
-.intro{
-  padding: 50px;
-  gap: 12px;
-  justify-content: space-between;
+
+.intro {
+  height: 400px;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  background-image: url("/assets/image/symbol1.png");
+  background-repeat: no-repeat;
 }
 
-.menu{
+.intro .container {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.intro .container .title {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.intro .container .description {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  padding: 32px;
+  gap: 20px;
+}
+
+.intro .container .description p {
+  color: black;
+  padding: 0;
+}
+
+.bored {
+  font-size: 28px;
+}
+
+.bored p {
+  padding: 52px 200px;
+}
+
+.menu {
   font-family: "gameofsquids";
   text-align: center;
   background-color: white;
 }
 
-.game{
+.game {
   font-family: "gameofsquids";
   text-align: center;
   background-color: #095346;
 }
-.gamessquid{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  align-items: center;
+
+.visit .visit-container {
+  display: grid;
+  grid-template-columns: repeat(4);
+  grid-template-rows: repeat(4);
+  gap: 24px;
+  padding: 0 100px;
+  padding-top: 24px;
 }
 
-.green{
+.visit .visit-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.visit .visit-container .gamessquid-3 {
+  grid-row-start: 2;
+}
+
+.visit .visit-container .gamessquid-4 {
+  grid-row-start: 2;
+}
+
+.visit .green {
   text-align: center;
   background-color: #e83e7d;
 }
 
-.symbol2{
-  padding: 400px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.offers-container {
+  background-color: #095346;
+  width: 100%;
 }
 
-.offers{
-  background-color: #095346;
+.offers {
+  padding: 50px;
+  font-size: 52px;
+  width: 50%;
+}
+
+.visit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.visit p {
+  padding: 52px 200px;
+}
+
+.visit .symbol2-container .symbol2 {
+  object-position: center;
+  width: 50%;
+  padding: 200px 0;
+}
+
+.visit .symbol2-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 24px 0;
+  width: 100%;
+}
+
+.footer-child h5 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.all-right {
+  padding: 32px 0;
+}
+
+.icon {
+  size: 90px;
 }

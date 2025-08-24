@@ -299,7 +299,7 @@ main {
 
 .footer-logo {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
 }
 
@@ -320,7 +320,7 @@ main {
 }
 
 .logo-cafe::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -418,108 +418,4 @@ main {
   margin: 0;
   letter-spacing: 0.5px;
   font-family: "gantari";
-}
-
-/* Responsive Design */
-@media (max-width: 968px) {
-  .navbar-container {
-    padding: 20px;
-  }
-  
-  .nav-links {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .navbar-item {
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .newsletter-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 24px;
-  }
-  
-  .newsletter-content h2 {
-    font-size: 24px;
-  }
-  
-  .email-input {
-    width: 220px;
-  }
-  
-  .logo-text {
-    font-size: 48px;
-  }
-  
-  .logo-cafe {
-    font-size: 32px;
-  }
-  
-  .footer-links-section {
-    flex-direction: column;
-    gap: 40px;
-    text-align: center;
-  }
-  
-  .social-icons {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar h1 {
-    font-size: 18px;
-  }
-  
-  .logo {
-    height: 48px;
-  }
-  
-  .newsletter-section {
-    padding: 30px 0;
-  }
-  
-  .footer-container {
-    padding: 0 16px;
-  }
-  
-  .newsletter-content h2 {
-    font-size: 20px;
-  }
-  
-  .email-input {
-    width: 180px;
-    font-size: 12px;
-  }
-  
-  .logo-section {
-    padding: 40px 0;
-  }
-  
-  .logo-text {
-    font-size: 36px;
-  }
-  
-  .logo-cafe {
-    font-size: 24px;
-  }
-  
-  .footer-links-section {
-    padding: 30px 0;
-  }
 }
